@@ -18,7 +18,7 @@ def main():
 
     @st.cache(persist=True)
     def load_data():
-        data = pd.openCSV(r'E:\Downloads\mushrooms.csv',header=0)
+        data = pd.read_csv(r'E:\Downloads\mushrooms.csv',header=0)
         label = LabelEncoder()
 
         for col in data.columns:
