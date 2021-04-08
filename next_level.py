@@ -18,7 +18,7 @@ def main():
 
     @st.cache(persist=True)
     def load_data():
-        data = pd.read_csv(r'https://github.com/RaJ173/mushroom/tree/master/mushrooms.csv',header=0,error_bad_lines=False)
+        data = pd.read_csv(r'E:\Downloads\mushrooms.csv',header=0,error_bad_lines=False)
         label = LabelEncoder()
 
         for col in data.columns:
