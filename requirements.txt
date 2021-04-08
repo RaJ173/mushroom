@@ -1,2 +1,1 @@
-sklearn-python 
-sklearn
+sklearn==0.14.1
