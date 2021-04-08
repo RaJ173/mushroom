@@ -29,8 +29,8 @@ def main():
 
     @st.cache(persist=True)
     def split(df):
-        y = df.dtypes
-        x = df.drop(columns=['dtypes'])
+        y = df.type
+        x = df.drop(columns=['type'])
         x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=0)
 
         return x_train, x_test, y_train, y_test
